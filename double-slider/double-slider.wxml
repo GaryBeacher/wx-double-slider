@@ -1,0 +1,19 @@
+<view class='wrapper'>
+	<movable-area class="area" style="width:{{width + 60}}rpx;height:{{size}}rpx">
+		<view class='bar'></view>
+		<view class='bar-cover' style='width:{{(block2X - block1X)*2}}rpx;left:{{block1X*2}}rpx'></view>
+
+		<movable-view class='block-1' style='width:{{size}}rpx;height:{{size}}rpx' direction="horizontal" x="{{block1X}}" bindchange="onChange1" animation="{{false}}" friction="1">
+			<view class='tooltips' wx:if="{{tips1Show}}">
+				{{val1}}
+				<view class='arrow'></view>
+			</view>
+		</movable-view>
+		<movable-view class='block-2' style='width:{{size}}rpx;height:{{size}}rpx' direction="horizontal" x="{{block2X}}" bindchange="onChange2" animation="{{false}}" friction="1">
+			<view class='tooltips' wx:if="{{tips2Show}}">
+				{{val2}}
+				<view class='arrow'></view>
+			</view>
+		</movable-view>
+	</movable-area>
+</view>

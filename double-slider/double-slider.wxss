@@ -1,0 +1,88 @@
+page {
+  background-color: #ddd;
+}
+
+.wrapper {
+  width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 80rpx;
+}
+
+.area {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.bar {
+  width: 100%;
+  height: 10rpx;
+  background-color: #f4f5f7;
+  position: absolute;
+  top: 24rpx;
+	left: 0;
+  z-index: 0;
+}
+
+.bar-cover {
+  width: 100%;
+  height: 10rpx;
+  background-color: #f45c8d;
+  position: absolute;
+  top: 24rpx;
+	left: 0;
+  z-index: 1;
+}
+
+.block-1 {
+  background-color: #fff;
+  border: 1rpx solid rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 7px 0px rgba(179, 179, 179, 0.5);
+  border-radius: 50%;
+	box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.block-2 {
+  background-color: #fff;
+  border: 1rpx solid rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 7px 0px rgba(179, 179, 179, 0.5);
+  border-radius: 50%;
+	box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.tooltips {
+  position: absolute;
+  width: 80rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  font-size: 22rpx;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2rpx;
+	top: -62rpx;
+	left: -10rpx;
+}
+
+.arrow {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.6);
+  width: 0px;
+  height: 0px;
+  line-height: 0px;
+  border-width: 15rpx 15rpx 0;
+  border-style: solid dashed dashed dashed;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  bottom: -14rpx;
+  left: 24rpx;
+}

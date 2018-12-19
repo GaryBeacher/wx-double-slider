@@ -1,0 +1,7 @@
+App({
+	data: {
+	},
+  onLaunch: function () {
+
+  }
+})
